@@ -10,6 +10,11 @@
 		1D73CE99216D49030070648D /* CoreDataPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D73CE8F216D49030070648D /* CoreDataPod.framework */; };
 		1D73CE9E216D49030070648D /* CoreDataPodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73CE9D216D49030070648D /* CoreDataPodTests.swift */; };
 		1D73CEA0216D49030070648D /* CoreDataPod.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D73CE92216D49030070648D /* CoreDataPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D73CEB3216D4F820070648D /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D73CEB1216D4F820070648D /* Database.xcdatamodeld */; };
+		1D73CEB6216D529D0070648D /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73CEB5216D529D0070648D /* Student.swift */; };
+		1D73CEB8216D52A70070648D /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73CEB7216D52A70070648D /* School.swift */; };
+		1D73CEBA216D52B00070648D /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73CEB9216D52B00070648D /* Address.swift */; };
+		1D73CEBC216D53920070648D /* Houses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73CEBB216D53920070648D /* Houses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		1D73CE98216D49030070648D /* CoreDataPodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataPodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D73CE9D216D49030070648D /* CoreDataPodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPodTests.swift; sourceTree = "<group>"; };
 		1D73CE9F216D49030070648D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D73CEB2216D4F820070648D /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
+		1D73CEB5216D529D0070648D /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		1D73CEB7216D52A70070648D /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		1D73CEB9216D52B00070648D /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		1D73CEBB216D53920070648D /* Houses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Houses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +81,10 @@
 		1D73CE91216D49030070648D /* CoreDataPod */ = {
 			isa = PBXGroup;
 			children = (
+				1D73CEB4216D52030070648D /* Classes */,
 				1D73CE92216D49030070648D /* CoreDataPod.h */,
 				1D73CE93216D49030070648D /* Info.plist */,
+				1D73CEB1216D4F820070648D /* Database.xcdatamodeld */,
 			);
 			path = CoreDataPod;
 			sourceTree = "<group>";
@@ -84,6 +96,17 @@
 				1D73CE9F216D49030070648D /* Info.plist */,
 			);
 			path = CoreDataPodTests;
+			sourceTree = "<group>";
+		};
+		1D73CEB4216D52030070648D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D73CEB5216D529D0070648D /* Student.swift */,
+				1D73CEB7216D52A70070648D /* School.swift */,
+				1D73CEB9216D52B00070648D /* Address.swift */,
+				1D73CEBB216D53920070648D /* Houses.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +171,7 @@
 				TargetAttributes = {
 					1D73CE8E216D49030070648D = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					1D73CE97216D49030070648D = {
 						CreatedOnToolsVersion = 10.0;
@@ -194,6 +218,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D73CEB3216D4F820070648D /* Database.xcdatamodeld in Sources */,
+				1D73CEB8216D52A70070648D /* School.swift in Sources */,
+				1D73CEBC216D53920070648D /* Houses.swift in Sources */,
+				1D73CEBA216D52B00070648D /* Address.swift in Sources */,
+				1D73CEB6216D529D0070648D /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +370,7 @@
 		1D73CEA4216D49030070648D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mkdir.CoreDataPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +397,7 @@
 		1D73CEA5216D49030070648D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +423,7 @@
 		1D73CEA7216D49030070648D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62W5236K33;
 				INFOPLIST_FILE = CoreDataPodTests/Info.plist;
@@ -409,6 +442,7 @@
 		1D73CEA8216D49030070648D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62W5236K33;
 				INFOPLIST_FILE = CoreDataPodTests/Info.plist;
@@ -455,6 +489,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1D73CEB1216D4F820070648D /* Database.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1D73CEB2216D4F820070648D /* Database.xcdatamodel */,
+			);
+			currentVersion = 1D73CEB2216D4F820070648D /* Database.xcdatamodel */;
+			path = Database.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1D73CE86216D49030070648D /* Project object */;
 }
