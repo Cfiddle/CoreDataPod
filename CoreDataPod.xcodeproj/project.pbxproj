@@ -85,7 +85,6 @@
 		1D73CE91216D49030070648D /* CoreDataPod */ = {
 			isa = PBXGroup;
 			children = (
-				1D73CEC9216E64E40070648D /* Utils */,
 				1D73CEB4216D52030070648D /* Classes */,
 				1D73CE92216D49030070648D /* CoreDataPod.h */,
 				1D73CE93216D49030070648D /* Info.plist */,
@@ -111,16 +110,9 @@
 				1D73CEB9216D52B00070648D /* Address.swift */,
 				1D73CEC3216E54140070648D /* CoreDataPod.swift */,
 				1D73CEC7216E63FD0070648D /* PersistenceService.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		1D73CEC9216E64E40070648D /* Utils */ = {
-			isa = PBXGroup;
-			children = (
 				1D73CECA216E64F20070648D /* BundleExtensions.swift */,
 			);
-			path = Utils;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
