@@ -11,7 +11,7 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="numOfRooms" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Address" inverseName="schools" inverseEntity="Address" syncable="YES"/>
-        <relationship name="students" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="school" inverseEntity="Student" syncable="YES"/>
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Student" inverseName="school" inverseEntity="Student" syncable="YES"/>
         <uniquenessConstraints>
             <uniquenessConstraint>
                 <constraint value="name"/>
@@ -26,8 +26,8 @@
         <relationship name="school" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="School" inverseName="students" inverseEntity="School" syncable="YES"/>
     </entity>
     <elements>
-        <element name="School" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="School" positionX="-292.44140625" positionY="-131.53125" width="128" height="120"/>
         <element name="Student" positionX="-54" positionY="18" width="128" height="120"/>
-        <element name="Address" positionX="-36" positionY="45" width="128" height="105"/>
+        <element name="Address" positionX="-61.109375" positionY="-170.609375" width="128" height="105"/>
     </elements>
 </model>
