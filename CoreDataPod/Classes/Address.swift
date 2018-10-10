@@ -9,22 +9,25 @@
 import Foundation
 import CoreData
 
-@objc(Address)
-public class Address: NSManagedObject {
-    
-    @NSManaged public var city: String
-    @NSManaged public var country: String
-    @NSManaged public var street: String
+extension CoreDataPod {
 
-    public convenience init(city: String, country: String, street: String, using context: NSManagedObjectContext) {
-        guard let entity = NSEntityDescription.entity(forEntityName: "Address", in: context)  else { fatalError() }
-        self.init(entity: entity, insertInto: context)
-        self.city = city
-        self.country = country
-        self.street = street
-    }
-    
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Address> {
-        return NSFetchRequest<Address>(entityName: "Address")
+    @objc(Address)
+    public class Address: NSManagedObject {
+        
+        @NSManaged public var city: String
+        @NSManaged public var country: String
+        @NSManaged public var street: String
+
+        public convenience init(city: String, country: String, street: String, using context: NSManagedObjectContext) {
+            guard let entity = NSEntityDescription.entity(forEntityName: "Address", in: context)  else { fatalError() }
+            self.init(entity: entity, insertInto: context)
+            self.city = city
+            self.country = country
+            self.street = street
+        }
+        
+        @nonobjc public class func fetchRequest() -> NSFetchRequest<Address> {
+            return NSFetchRequest<Address>(entityName: "Address")
+        }
     }
 }
