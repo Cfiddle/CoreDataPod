@@ -15,6 +15,8 @@
 		1D73CEB8216D52A70070648D /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73CEB7216D52A70070648D /* School.swift */; };
 		1D73CEBA216D52B00070648D /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73CEB9216D52B00070648D /* Address.swift */; };
 		1D73CEC4216E54140070648D /* CoreDataPod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73CEC3216E54140070648D /* CoreDataPod.swift */; };
+		1D73CEC8216E63FD0070648D /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73CEC7216E63FD0070648D /* PersistenceService.swift */; };
+		1D73CECB216E64F20070648D /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73CECA216E64F20070648D /* BundleExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 		1D73CEB7216D52A70070648D /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		1D73CEB9216D52B00070648D /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		1D73CEC3216E54140070648D /* CoreDataPod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPod.swift; sourceTree = "<group>"; };
+		1D73CEC7216E63FD0070648D /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		1D73CECA216E64F20070648D /* BundleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		1D73CE91216D49030070648D /* CoreDataPod */ = {
 			isa = PBXGroup;
 			children = (
+				1D73CEC9216E64E40070648D /* Utils */,
 				1D73CEB4216D52030070648D /* Classes */,
 				1D73CE92216D49030070648D /* CoreDataPod.h */,
 				1D73CE93216D49030070648D /* Info.plist */,
@@ -105,8 +110,17 @@
 				1D73CEB7216D52A70070648D /* School.swift */,
 				1D73CEB9216D52B00070648D /* Address.swift */,
 				1D73CEC3216E54140070648D /* CoreDataPod.swift */,
+				1D73CEC7216E63FD0070648D /* PersistenceService.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		1D73CEC9216E64E40070648D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1D73CECA216E64F20070648D /* BundleExtensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D73CEB3216D4F820070648D /* Database.xcdatamodeld in Sources */,
+				1D73CECB216E64F20070648D /* BundleExtensions.swift in Sources */,
+				1D73CEC8216E63FD0070648D /* PersistenceService.swift in Sources */,
 				1D73CEB8216D52A70070648D /* School.swift in Sources */,
 				1D73CEC4216E54140070648D /* CoreDataPod.swift in Sources */,
 				1D73CEBA216D52B00070648D /* Address.swift in Sources */,

@@ -27,7 +27,7 @@ extension CoreDataPod {
             self.year = Int16(year)
             self.house = house
         }
-        
+
         @nonobjc public class func fetchRequest() -> NSFetchRequest<Student> {
             return NSFetchRequest<Student>(entityName: "Student")
         }
